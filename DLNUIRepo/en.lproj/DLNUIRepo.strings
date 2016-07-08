@@ -1,0 +1,12 @@
+/* 
+  DLNUIRepo.strings
+  DLNUIRepo
+
+  Created by Linzh on 6/24/16.
+  Copyright © 2016 Daniel Lin. All rights reserved.
+*/
+
+"操作成功" = "Operation success";
+"操作失败" = "Operation fail";
+"返回" = "Back";
+"提示" = "Notice";

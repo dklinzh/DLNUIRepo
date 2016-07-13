@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    A repository of some UI framworks for iOS development.
                    DESC
-  s.homepage     = "http://EXAMPLE"
+  s.homepage     = "http://git.jzg01.com/dlnframework/dlnuirepo"
   s.license      = "MIT"
-  s.author       = { "Daniel Lin" => "linzh4g@gmail.com" }
+  s.author       = { "Daniel Lin" => "linzhdk@gmail.com" }
   s.platform   = :ios, "7.0"
-  s.source       = { :git => "/Volumes/DLNFramework/Framework/DLNUIRepo" }
+  s.source       = { :git => "http://git.jzg01.com/dlnframework/dlnuirepo.git" }
   s.source_files  = "DLNUIRepo/**/*.{h,m}"
   s.resources = "DLNUIRepo/**/*.lproj"
   s.requires_arc = true

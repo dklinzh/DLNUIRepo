@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "DLNUIRepo"
-  s.version      = "0.4.9"
+  s.version      = "0.4.10"
   s.summary      = "A repository of some UI framworks for iOS development."
   s.description  = <<-DESC
                    A repository of some UI framworks for iOS development.

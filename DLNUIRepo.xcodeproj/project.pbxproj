@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D006CE2B45B567060D07C33 /* libPods-DLNUIRepo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 169EB1E481CDA56F7A0479A9 /* libPods-DLNUIRepo.a */; };
+		C210410A1D40C85700A0931E /* UIStoryboard+DLNBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = C21041081D40C85700A0931E /* UIStoryboard+DLNBundle.h */; };
+		C210410B1D40C85700A0931E /* UIStoryboard+DLNBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = C21041091D40C85700A0931E /* UIStoryboard+DLNBundle.m */; };
 		C21FD2271C8718E000BEEC44 /* UIToolbar+DLNItems.h in Headers */ = {isa = PBXBuildFile; fileRef = C21FD2251C8718E000BEEC44 /* UIToolbar+DLNItems.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C21FD2281C8718E000BEEC44 /* UIToolbar+DLNItems.m in Sources */ = {isa = PBXBuildFile; fileRef = C21FD2261C8718E000BEEC44 /* UIToolbar+DLNItems.m */; };
 		C225188F1C2BE5CE00870946 /* DLNUIRepo.h in Headers */ = {isa = PBXBuildFile; fileRef = C225188E1C2BE5CE00870946 /* DLNUIRepo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -88,6 +90,8 @@
 
 /* Begin PBXFileReference section */
 		169EB1E481CDA56F7A0479A9 /* libPods-DLNUIRepo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLNUIRepo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C21041081D40C85700A0931E /* UIStoryboard+DLNBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+DLNBundle.h"; sourceTree = "<group>"; };
+		C21041091D40C85700A0931E /* UIStoryboard+DLNBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+DLNBundle.m"; sourceTree = "<group>"; };
 		C21FD2251C8718E000BEEC44 /* UIToolbar+DLNItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+DLNItems.h"; sourceTree = "<group>"; };
 		C21FD2261C8718E000BEEC44 /* UIToolbar+DLNItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+DLNItems.m"; sourceTree = "<group>"; };
 		C225188B1C2BE5CE00870946 /* DLNUIRepo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLNUIRepo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -395,6 +399,8 @@
 		C2AF33C71C2C0356004AB932 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C21041081D40C85700A0931E /* UIStoryboard+DLNBundle.h */,
+				C21041091D40C85700A0931E /* UIStoryboard+DLNBundle.m */,
 				C2AF33C81C2C0356004AB932 /* DLNInputViewController.h */,
 				C2AF33C91C2C0356004AB932 /* DLNInputViewController.m */,
 				C2B510DC1CC07E0E00432903 /* UIViewController+DLNStoryBoard.h */,
@@ -478,6 +484,7 @@
 				C2B510DE1CC07E0E00432903 /* UIViewController+DLNStoryBoard.h in Headers */,
 				C2AF33D51C2C0356004AB932 /* DLNInputViewButton.h in Headers */,
 				C2B812681CDCA2D800C31A58 /* UIButton+DLNImage.h in Headers */,
+				C210410A1D40C85700A0931E /* UIStoryboard+DLNBundle.h in Headers */,
 				C2AF34141C2CCF42004AB932 /* UIImage+DLNSize.h in Headers */,
 				C2E3DABA1CF5400C002FD35A /* UITextField+DLNLength.h in Headers */,
 			);
@@ -490,13 +497,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C225189F1C2BE5CE00870946 /* Build configuration list for PBXNativeTarget "DLNUIRepo" */;
 			buildPhases = (
-				FEA9360207E381A8FE0D4530 /* 📦 Check Pods Manifest.lock */,
+				FEA9360207E381A8FE0D4530 /* [CP] Check Pods Manifest.lock */,
 				C22518861C2BE5CE00870946 /* Sources */,
 				C22518871C2BE5CE00870946 /* Frameworks */,
 				C22518881C2BE5CE00870946 /* Headers */,
 				C22518891C2BE5CE00870946 /* Resources */,
 				C2AF33361C2BF8F9004AB932 /* Bump Build Version */,
-				AC3EBDE48DCD179CCA09AAA1 /* 📦 Copy Pods Resources */,
+				AC3EBDE48DCD179CCA09AAA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -581,14 +588,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AC3EBDE48DCD179CCA09AAA1 /* 📦 Copy Pods Resources */ = {
+		AC3EBDE48DCD179CCA09AAA1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,14 +617,14 @@
 			shellPath = /bin/sh;
 			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\n#buildNumber=$(($buildNumber + 1))\nbuildNumber=$(date +%Y%m%d%H%M)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n\n#The recommended way below:\n#/bin/sh /Users/Linzh/Documents/IOS/Xcode/Frameworks/Script/BumpBuildVersion.sh \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
 		};
-		FEA9360207E381A8FE0D4530 /* 📦 Check Pods Manifest.lock */ = {
+		FEA9360207E381A8FE0D4530 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,6 +668,7 @@
 				C2AF33D41C2C0356004AB932 /* UIView+DLNBadgeManager.m in Sources */,
 				C2AF33F21C2C0356004AB932 /* UITableView+DLNCell.m in Sources */,
 				C2AF33DC1C2C0356004AB932 /* DLNTranslucentLayerView.m in Sources */,
+				C210410B1D40C85700A0931E /* UIStoryboard+DLNBundle.m in Sources */,
 				C2AF33D61C2C0356004AB932 /* DLNInputViewButton.m in Sources */,
 				C2A583681CCF62320070B2C6 /* EmojTool.m in Sources */,
 			);

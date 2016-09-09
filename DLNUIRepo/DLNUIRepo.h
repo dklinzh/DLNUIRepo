@@ -16,6 +16,5 @@ FOUNDATION_EXPORT const unsigned char DLNUIRepoVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DLNUIRepo/PublicHeader.h>
 
-#import <Chameleon.h>
-#import <Masonry.h>
-
+#import "Chameleon.h"
+#import "Masonry.h"

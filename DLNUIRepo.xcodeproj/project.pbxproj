@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D006CE2B45B567060D07C33 /* libPods-DLNUIRepo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 169EB1E481CDA56F7A0479A9 /* libPods-DLNUIRepo.a */; };
+		0B61352D9EF7A970380C80BA /* Pods_DLNUIRepo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A874D0A49DDF92161748A44 /* Pods_DLNUIRepo.framework */; };
 		C210410A1D40C85700A0931E /* UIStoryboard+DLNBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = C21041081D40C85700A0931E /* UIStoryboard+DLNBundle.h */; };
 		C210410B1D40C85700A0931E /* UIStoryboard+DLNBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = C21041091D40C85700A0931E /* UIStoryboard+DLNBundle.m */; };
 		C21FD2271C8718E000BEEC44 /* UIToolbar+DLNItems.h in Headers */ = {isa = PBXBuildFile; fileRef = C21FD2251C8718E000BEEC44 /* UIToolbar+DLNItems.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,7 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		169EB1E481CDA56F7A0479A9 /* libPods-DLNUIRepo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLNUIRepo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A874D0A49DDF92161748A44 /* Pods_DLNUIRepo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLNUIRepo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21041081D40C85700A0931E /* UIStoryboard+DLNBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+DLNBundle.h"; sourceTree = "<group>"; };
 		C21041091D40C85700A0931E /* UIStoryboard+DLNBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+DLNBundle.m"; sourceTree = "<group>"; };
 		C21FD2251C8718E000BEEC44 /* UIToolbar+DLNItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+DLNItems.h"; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D006CE2B45B567060D07C33 /* libPods-DLNUIRepo.a in Frameworks */,
+				0B61352D9EF7A970380C80BA /* Pods_DLNUIRepo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +192,7 @@
 		4B656C5394140EEE19043217 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				169EB1E481CDA56F7A0479A9 /* libPods-DLNUIRepo.a */,
+				5A874D0A49DDF92161748A44 /* Pods_DLNUIRepo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

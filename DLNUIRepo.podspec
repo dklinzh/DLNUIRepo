@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.dependency "KINWebBrowser", "~> 1.3"
   s.dependency "CRToast", "~> 0.0.9"
   s.dependency "KVNProgress", "~> 2.2"
-  s.dependency "MBProgressHUD", "~> 0.9"
+  s.dependency "MBProgressHUD", "~> 1.0"
   s.dependency "WZLBadge", "~> 1.2"
   s.dependency "Masonry", "~> 1.0"
   s.dependency "ChameleonFramework", "~> 2.0"

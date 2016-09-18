@@ -112,10 +112,10 @@
         return _hudConfiguration;
     }
     _hudConfiguration = [[KVNProgressConfiguration alloc] init];
-    _hudConfiguration.backgroundType = KVNProgressBackgroundTypeBlurred;
-    _hudConfiguration.backgroundTintColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
-//    _hudConfiguration.backgroundType = KVNProgressBackgroundTypeSolid;
-//    _hudConfiguration.backgroundFillColor = [[UIColor blackColor] colorWithAlphaComponent:0.75];
+//    _hudConfiguration.backgroundType = KVNProgressBackgroundTypeBlurred;
+//    _hudConfiguration.backgroundTintColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
+    _hudConfiguration.backgroundType = KVNProgressBackgroundTypeSolid;
+    _hudConfiguration.backgroundFillColor = [[UIColor blackColor] colorWithAlphaComponent:0.75];
     _hudConfiguration.circleStrokeForegroundColor = FlatWhite;
     _hudConfiguration.circleStrokeBackgroundColor = FlatGrayDark;
     _hudConfiguration.circleFillBackgroundColor = [UIColor clearColor];

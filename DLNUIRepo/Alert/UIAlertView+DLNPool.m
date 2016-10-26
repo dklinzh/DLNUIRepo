@@ -8,7 +8,7 @@
 
 #import "UIAlertView+DLNPool.h"
 #import <objc/runtime.h>
-#import "DLNApplicationContext.h"
+#import <DLNFoundation/DLNApplicationContext.h>
 
 @implementation UIAlertView (DLNPool)
 #ifndef DLN_UI_DYNAMIC_DISABLED

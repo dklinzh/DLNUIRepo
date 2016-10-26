@@ -7,7 +7,7 @@
 //
 
 #import "UITextField+DLNLength.h"
-#import "NSObject+DLNProperty.h"
+#import <DLNCore/NSObject+DLNProperty.h>
 
 @interface UITextField ()
 @property (nonatomic, assign) NSUInteger maxLength;

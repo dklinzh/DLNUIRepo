@@ -7,8 +7,8 @@
 //
 
 #import "DLNHUDHelper.h"
-#import "KVNProgress.h"
-#import "MBProgressHUD.h"
+#import <KVNProgress/KVNProgress.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface DLNHUDHelper ()
 @property (strong, nonatomic) KVNProgressConfiguration *hudConfiguration;

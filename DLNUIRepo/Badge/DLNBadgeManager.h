@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WZLBadgeImport.h"
+#import <WZLBadge/WZLBadgeImport.h>
 #import "UIView+DLNBadgeManager.h"
 #import "UITabBarItem+DLNBadgeManager.h"
 #import "UIBarButtonItem+DLNBadgeManager.h"

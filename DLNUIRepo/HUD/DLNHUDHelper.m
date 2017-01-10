@@ -39,7 +39,10 @@
     if (stringNotEmpty(text) && superView) {
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:superView animated:YES];
         hud.mode = MBProgressHUDModeText;
-        hud.labelText = text;
+        hud.label.text = text;
+        hud.label.textColor = FlatWhite;
+        hud.label.font = [UIFont systemFontOfSize:14.0f];
+        hud.bezelView.color = [[UIColor blackColor] colorWithAlphaComponent:0.75];
         hud.margin = 10.f;
         hud.yOffset = superView.frame.size.height/3;
         hud.removeFromSuperViewOnHide = YES;

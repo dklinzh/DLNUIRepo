@@ -28,6 +28,8 @@
     if (self.didAddObserver == -1) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:self];
     }
+    
+    [self dln_dealloc];
 }
 
 #pragma mark - Public

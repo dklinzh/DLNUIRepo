@@ -1,0 +1,33 @@
+PODS:
+  - CocoaLumberjack (3.2.0):
+    - CocoaLumberjack/Default (= 3.2.0)
+    - CocoaLumberjack/Extensions (= 3.2.0)
+  - CocoaLumberjack/Default (3.2.0)
+  - CocoaLumberjack/Extensions (3.2.0):
+    - CocoaLumberjack/Default
+  - DLNCore (0.3.5)
+  - DLNFoundation (0.5.1):
+    - CocoaLumberjack (~> 3.0)
+    - DLNCore
+    - JSONModel (~> 1.7)
+  - JSONModel (1.7.0)
+
+DEPENDENCIES:
+  - DLNCore (from `../DLNCore`)
+  - DLNFoundation (from `../DLNFoundation`)
+
+EXTERNAL SOURCES:
+  DLNCore:
+    :path: ../DLNCore
+  DLNFoundation:
+    :path: ../DLNFoundation
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
+  DLNCore: d74ef25f3571c18f27b87fbc8c44dc0aced435b5
+  DLNFoundation: 4509ad92938e88bdd417c105c119f7f60d9fbd15
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+
+PODFILE CHECKSUM: d21ed6a76f23dca950ee313b4bdba4f1acf04ea7
+
+COCOAPODS: 1.2.1

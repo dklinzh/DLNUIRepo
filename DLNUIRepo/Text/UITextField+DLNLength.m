@@ -11,21 +11,25 @@
 
 @interface UITextField ()
 @property (nonatomic, assign) NSUInteger maxLength;
-@property (nonatomic, assign) int didAddObserver;
+@property (nonatomic, assign) NSUInteger didAddObserver;
 @end
 
 @implementation UITextField (DLNLength)
 + (void)load {
-    [self dln_addBasicProperty:@"maxLength" encodingType:@encode(NSUInteger)];
-    [self dln_addBasicProperty:@"didAddObserver" encodingType:@encode(int)];
-
-    Method origMethod = class_getInstanceMethod([self class], NSSelectorFromString(@"dealloc"));
-    Method newMethod = class_getInstanceMethod([self class], @selector(dln_dealloc));
-    method_exchangeImplementations(origMethod, newMethod);
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self dln_addBasicProperty:@"maxLength" encodingType:@encode(NSUInteger)];
+        [self dln_addBasicProperty:@"didAddObserver" encodingType:@encode(NSUInteger)];
+        
+        Method origMethod = class_getInstanceMethod([self class], NSSelectorFromString(@"dealloc"));
+        Method newMethod = class_getInstanceMethod([self class], @selector(dln_dealloc));
+        method_exchangeImplementations(origMethod, newMethod);
+    });
 }
 
 - (void)dln_dealloc {
-    if (self.didAddObserver == -1) {
+    if (self.didAddObserver == 1) {
+        self.didAddObserver = 0;
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:self];
     }
     
@@ -40,8 +44,8 @@
     
     self.maxLength = maxLength;
     
-    if (self.didAddObserver != -1) {
-        self.didAddObserver = -1;
+    if (self.didAddObserver != 1) {
+        self.didAddObserver = 1;
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldTextDidChangeNotification object:self];
     }
 }
